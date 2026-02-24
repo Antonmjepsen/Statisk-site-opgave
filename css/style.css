@@ -15,7 +15,9 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
+  gap: 40px;
   max-width: 700px;
+  min-width: 900px;
 }
 
 .grid_title {
@@ -31,18 +33,23 @@ img {
   color: inherit;
   cursor: pointer;
   font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
 }
 
 .h2_main {
   text-align: left;
   margin-top: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
 }
 
+/* 
 .h1_main {
   text-align: left;
   margin-left: 50px;
   margin-top: 50px;
   font-family: "Julius Sans One", sans-serif;
+  font-size: 70px;
 }
+*/
