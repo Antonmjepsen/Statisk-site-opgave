@@ -44,6 +44,71 @@ img {
   font-size: 60px;
 }
 
+.productlist-page {
+  padding: 0 24px 56px;
+}
+
+.product-grid-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.product-card {
+  border: 1px solid black;
+  text-decoration: none;
+  color: inherit;
+  background: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.product-card-content {
+  padding: 16px;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.product-card-content h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.product-card-content p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .h2_main {
+    font-size: 42px;
+    margin-top: 48px;
+  }
+}
+
 /* 
 .h1_main {
   text-align: left;
